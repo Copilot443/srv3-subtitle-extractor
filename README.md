@@ -2,29 +2,29 @@
   <img src="banner.svg" width="75%"/>
 </p>
 
-# srv3 – YouTube Karaoke Subtitle Extractor (`.srv3 → .ass`)
+# YouTube SRV3 Subtitle Extractor (`.srv3` → `.ass`)
 
-`srv3` is a cross-platform command-line tool built specifically for YouTube videos that use **karaoke-style, syllable-animated subtitles** (YouTube's `.srv3` subtitle format).
+`srv3` is a cross-platform command-line utility for extracting and converting YouTube's **SRV3 subtitle format**. It is designed to preserve timed text, styling, and supported animation effects when converting subtitle tracks to Advanced SubStation Alpha (`.ass`).
 
-It downloads the video, extracts syllable-accurate karaoke subtitle data, converts it to `.ass` format (preserving all animation and timing), and organizes everything cleanly into your `~/Videos` directory.
+The tool can download a YouTube video and its SRV3 subtitle track, convert the subtitle data to `.ass`, and organize the resulting files in your `~/Videos` directory. Conversion retains available timing, styling, and supported animation information.
 
 Fully compatible with **YouTube's SABR streaming system** — downloads exactly the format you select, no forced merges unless required by the format itself.
 
 ---
 
-## 🎤 Why `.srv3` / Karaoke Subtitles?
+## About YouTube SRV3 Subtitles
 
-Many music videos, anime openings/endings, and lyric videos on YouTube use karaoke-style subtitles where words or syllables animate individually with frame-accurate timing. Standard formats like `.srt` and `.vtt` cannot preserve this behavior — YouTube stores it internally as `.srv3`.
+YouTube's SRV3 format can represent timed text, styling, and animated subtitle effects, including word- or syllable-level highlighting. Simpler formats such as `.srt` and `.vtt` do not represent all of these features. Converting SRV3 to ASS makes supported styling and timing available in a widely used subtitle format.
 
-`srv3` exists specifically to extract that data, convert it to `.ass`, and keep the karaoke animations intact.
+`srv3` extracts SRV3 subtitle data and converts it to ASS while preserving the timing, styling, and animation information supported by the converter.
 
 ---
 
 ## ✨ Features
 
-- Built specifically for karaoke / syllable-animated subtitles
+- Extracts YouTube SRV3 subtitle tracks, including richly timed and styled subtitles
 - Extracts YouTube `.srv3` subtitle tracks
-- Converts `.srv3 → .ass` with full timing and animation precision
+- Converts `.srv3` to `.ass`, retaining available timing, styling, and supported animation effects
 - Supports **burned** subtitles (hardcoded into video)
 - Supports **soft** subtitles (muxed as a selectable track in MKV)
 - Optional subtitle editing before processing
@@ -64,7 +64,7 @@ Required by YTSubConverter.
 - Verify: `dotnet --version`
 
 ### YTSubConverter (`ytsubconverter`)
-Converts `.srv3` subtitle files to `.ass`.
+Converts YouTube SRV3 subtitle files to `.ass`.
 - Download from https://github.com/arcusmaximus/YTSubConverter/releases
 - Place `ytsubconverter` (or `ytsubconverter.exe`) somewhere on your PATH
 - Linux/macOS: `chmod +x ytsubconverter`
@@ -105,7 +105,7 @@ Used when editing subtitles with `-se` or `-be` modes.
 
 ### Option 1 — Precompiled Binaries *(recommended)*
 
-Precompiled executables are available for all platforms on the [Releases](https://github.com/Copilot443/srv3-karaoke-extractor/releases) page — **no Python required**.
+Precompiled executables are available for supported platforms on the [Releases](https://github.com/Copilot443/srv3-karaoke-extractor/releases) page — **Python is not required to run these binaries**.
 
 | File | Platform |
 |---|---|
@@ -172,7 +172,7 @@ Flags and URLs can be passed in **any order**.
 
 ## 💡 Examples
 
-Download video and subtitles, keep both:
+Download a video and its subtitles, keeping both files:
 ```
 srv3 "https://www.youtube.com/watch?v=XXXX"
 ```
@@ -187,7 +187,7 @@ Mux as a soft subtitle track (MKV):
 srv3 "https://www.youtube.com/watch?v=XXXX" --soft
 ```
 
-Edit subtitles before burning:
+Edit the converted subtitles before burning them into the video:
 ```
 srv3 "https://www.youtube.com/watch?v=XXXX" --burn-edit
 ```
@@ -219,7 +219,7 @@ srv3 -yv "--sponsorblock-remove outro" --burn-edit -S "https://www.youtube.com/w
 
 ---
 
-## 🎚 Format Selection & SABR Notes
+## Format Selection and SABR Compatibility
 
 When you run `srv3`, it will:
 
