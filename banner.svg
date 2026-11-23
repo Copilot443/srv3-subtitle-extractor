@@ -1,6 +1,6 @@
 <svg width="100%" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg">
-  <title>srv3 banner</title>
-  <desc>Stylized banner for srv3 — YouTube karaoke subtitle extractor</desc>
+  <title>SRV3 Subtitle Extractor</title>
+  <desc>SRV3 is a YouTube subtitle extraction and conversion tool.</desc>
 
   <rect x="0" y="0" width="680" height="200" rx="16" fill="#1a1a2e"/>
   <rect x="0" y="0" width="680" height="200" rx="16" fill="none" stroke="#e040fb" stroke-width="1" opacity="0.2"/>
@@ -21,7 +21,7 @@
   <polygon points="78,62 78,102 112,82" fill="#e040fb"/>
 
   <text x="152" y="72" font-family="system-ui, sans-serif" font-size="48" font-weight="700" fill="#ffffff" letter-spacing="-1">srv3</text>
-  <text x="154" y="100" font-family="system-ui, sans-serif" font-size="15" font-weight="400" fill="#e040fb" opacity="0.85" letter-spacing="0.5">YouTube karaoke subtitle extractor</text>
-  <text x="154" y="125" font-family="system-ui, monospace" font-size="12" fill="#888aaa" opacity="0.7">.srv3  →  .ass  |  burn  |  soft  |  cross-platform</text>
+  <text x="154" y="100" font-family="system-ui, sans-serif" font-size="15" font-weight="400" fill="#e040fb" opacity="0.85" letter-spacing="0.5">YouTube SRV3 Subtitle Extractor</text>
+  <text x="154" y="125" font-family="system-ui, monospace" font-size="12" fill="#888aaa" opacity="0.7">.srv3  →  .ass  |  Styled subtitles  |  Burn-in or soft subs</text>
 
 </svg>
