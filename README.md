@@ -124,8 +124,8 @@ After downloading:
 1. Install [Python 3.8+](https://www.python.org/downloads/)
 2. Clone the repo:
    ```
-   git clone https://github.com/Copilot443/srv3-karaoke-extractor
-   cd srv3-karaoke-extractor
+   git clone https://github.com/Copilot443/srv3-subtitle-extractor
+   cd srv3-subtitle-extractor
    ```
 3. Run directly:
    ```
